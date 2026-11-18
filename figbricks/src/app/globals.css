@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #111827;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+body {
+  background-color: #ffffff !important;
+  color: #111827;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* ===== Global Input & Form Fix ===== */
+input,
+textarea,
+select,
+button {
+  color: #111827;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #9ca3af;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="search"],
+input[type="password"],
+input[type="url"],
+textarea,
+select {
+  background-color: #ffffff;
+  color: #111827;
+  border-color: #d1d5db;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="password"]:focus,
+input[type="url"]:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #d91e18;
+  box-shadow: 0 0 0 1px #d91e18;
+}
+
+/* Fix file input text */
+input[type="file"] {
+  color: #374151;
+}
+
+/* Table text visibility */
+table th,
+table td {
+  color: #111827;
+}
+
+/* Links default */
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
